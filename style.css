@@ -32,9 +32,12 @@ main{
 }
 .left_content{
     height: 350px;
-    width: 250px;
+    width: 800px;
+    background-image: url(img/image-product-desktop.jpg);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    background-position: center;
+    background-size: cover;
 
 }
 .right_content{
@@ -64,7 +67,6 @@ h4{
 .button{
     display: flex;
     justify-content: center;
-    border: 1px solid black;
     height: 30px;
     align-items: center;
     text-decoration: none;
@@ -72,4 +74,57 @@ h4{
     border-radius: 5px;
     margin-top: 20px;
     font-size: 12px;
+}
+@media screen and (max-width: 376px) {
+
+    main{
+        height: 95vh;
+        width: 90vw;
+        background-color: white;
+        display: block;
+    
+    }
+    .left_content{
+        background-image: url(img/image-product-mobile.jpg);
+        background-size: cover;
+        width: auto;
+        height: 250px;
+        background-position: center;
+        display: flex;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .right_content{
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+    .price{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        margin-top: 60px;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        height: 55px;
+        align-items: center;
+        text-decoration: none;
+        background-color: rgb(61, 129, 102);
+        border-radius: 5px;
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 40px;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .attribution{
+        margin-top: 75px;
+    }
 }
